@@ -1,0 +1,188 @@
+.container { padding: 1.5rem; }
+
+.circuitHeader {
+  background: var(--night);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.circuitTitle {
+  font-size: 20px;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.circuitStats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+.stat:first-child { padding-left: 0; }
+
+.statVal {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.2;
+}
+
+.statLbl {
+  font-size: 11px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statDivider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255,255,255,0.1);
+}
+
+.tipBox {
+  background: var(--gold-xlight);
+  border: 1px solid var(--gold-light);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  font-size: 13px;
+  color: var(--gold-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.steps {
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.stepLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.stepDot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.stepLine {
+  width: 2px;
+  flex: 1;
+  min-height: 16px;
+  background: var(--border);
+  margin: 5px 0;
+}
+
+.stepBody {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+.stepName {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.stepType {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.stepTip {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+.stepBadges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badgeTime, .badgePrice, .badgeHotel {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.badgeTime  { background: #EEF0F8; color: #445; }
+.badgePrice { background: var(--gold-light); color: var(--gold-dark); }
+.badgeHotel { background: var(--green-light); color: var(--green); }
+
+.footer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+.btnSecondary {
+  padding: 10px 20px;
+  border: 1px solid var(--border-med);
+  background: transparent;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+}
+.btnSecondary:hover { background: var(--bg-soft); }
+
+.btnPrint {
+  padding: 10px 20px;
+  border: 1px solid var(--border-med);
+  background: transparent;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+}
+.btnPrint:hover { background: var(--bg-soft); }
+
+@media print {
+  .footer { display: none; }
+}
